@@ -34,13 +34,13 @@ Neural network with 3 fully connected layers:
 * Fully connected layer 3: with input = 300 and output = 1 (maps states and actions to Q-values)
 
 **Parameters used in the DDPG algorithm:**
-* Replay buffer size: BUFFER_SIZE = int(1e6)
+* Replay buffer size: BUFFER_SIZE = int(1e5)
 * Minibatch size: BATCH_SIZE = 128
 * Discount factor: GAMMA = 0.99
 * Soft update of target parameters: TAU = 1e-3
 * Learning rate of the actor: LR_ACTOR = 1e-4
-* Learning rate of the critic: LR_CRITIC = 3e-4
-* L2 weight decay: WEIGHT_DECAY = 0.0001
+* Learning rate of the critic: LR_CRITIC = 1e-3
+* L2 weight decay: WEIGHT_DECAY = 0
 
 ## Installation Instruction
 
