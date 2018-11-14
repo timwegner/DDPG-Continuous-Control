@@ -2,6 +2,8 @@
 
 Solving a continuous control  task of double-jointed arms using DDPG agents.
 
+![](Continuous-Control.gif)
+
 ## Environment details
 The objective of Unity's [Reacher environment](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) is to move the 20 double-jointed arms to reach and maintain a target location for as long as possible. 
 
@@ -16,6 +18,7 @@ The objective of Unity's [Reacher environment](https://github.com/Unity-Technolo
 DDPG is an Actor-Critic model: 
 * The Actor is a policy-based algorithm with high variance, taking relatively long to converge.
 * The Critic is a value-based algorithm with high bias instead
+
 In this approach, Actor and Critic work together to reach better convergence and performance.
 
 **Actor model**
@@ -78,4 +81,4 @@ Run ```p2_continuous-control/report.ipynb```
 
 Enter the right path for the Unity Reacher environment in report.ipynb. 
 
-Run the remaining cell as ordered in ```report.ipynb``` to train the DDPG agents. 
+Run the remaining cells as ordered in ```report.ipynb``` to train the DDPG agents. 
