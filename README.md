@@ -3,7 +3,7 @@
 Solving a continuous control  task of double-jointed arms using DDPG agents.
 
 ## Environment details
-The objective of Unity's [Reacher environment] (https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) is to move the 20 double-jointed arms to reach and maintain a target location for as long as possible. 
+The objective of Unity's [Reacher environment](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) is to move the 20 double-jointed arms to reach and maintain a target location for as long as possible. 
 
 **Action space:** For each of the 20 arms, the action space is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
 
@@ -11,7 +11,7 @@ The objective of Unity's [Reacher environment] (https://github.com/Unity-Technol
 
 **Reward function:** The reward is given to each agent individually: A reward of +0.1 is given each step the agent's arm is in its individual target location.
 
-**DDPG structure:** Similar to Google DeepMind's paper, ["Continuous Control with Deep Reinforcement Learning"] (https://arxiv.org/abs/1509.02971), the adopted learning algorithm is a DDPG algorithm. DDPG is a model-free policy-based reinforcement learning algorithm where agents learn by observing state spaces with no prior knowledge of the environment. Learning improves by using policy gradient optimization.
+**DDPG structure:** Similar to Google DeepMind's paper, ["Continuous Control with Deep Reinforcement Learning"](https://arxiv.org/abs/1509.02971), the adopted learning algorithm is a DDPG algorithm. DDPG is a model-free policy-based reinforcement learning algorithm where agents learn by observing state spaces with no prior knowledge of the environment. Learning improves by using policy gradient optimization.
 
 DDPG is an Actor-Critic model: 
 * The Actor is a policy-based algorithm with high variance, taking relatively long to converge
