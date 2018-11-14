@@ -18,6 +18,7 @@ The objective of Unity's [Reacher environment](https://github.com/Unity-Technolo
 DDPG is an Actor-Critic model: 
 * The Actor is a policy-based algorithm with high variance, taking relatively long to converge.
 * The Critic is a value-based algorithm with high bias instead
+
 In this approach, Actor and Critic work together to reach better convergence and performance.
 
 **Actor model**
