@@ -24,6 +24,7 @@ Neural network with 3 fully connected layers:
 * Fully connected layer 1: with input = 33 (state spaces) and output = 400
 * Fully connected layer 2: with input = 400 and output = 300
 * Fully connected layer 3: with input = 300 and output = 4 (for each of the 4 actions)
+
 Tanh is used in the final layer that maps states to actions. Batch normalization is used for mini batch training.
 
 **Critic model**
