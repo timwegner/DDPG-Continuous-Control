@@ -81,4 +81,4 @@ Run ```p2_continuous-control/report.ipynb```
 
 Enter the right path for the Unity Reacher environment in report.ipynb. 
 
-Run the remaining cell as ordered in ```report.ipynb``` to train the DDPG agents. 
+Run the remaining cells as ordered in ```report.ipynb``` to train the DDPG agents. 
