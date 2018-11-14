@@ -14,18 +14,18 @@ The objective of Unity's [Reacher environment](https://github.com/Unity-Technolo
 **DDPG structure:** Similar to Google DeepMind's paper, ["Continuous Control with Deep Reinforcement Learning"](https://arxiv.org/abs/1509.02971), the adopted learning algorithm is a DDPG algorithm. DDPG is a model-free policy-based reinforcement learning algorithm where agents learn by observing state spaces with no prior knowledge of the environment. Learning improves by using policy gradient optimization.
 
 DDPG is an Actor-Critic model: 
-* The Actor is a policy-based algorithm with high variance, taking relatively long to converge
+* The Actor is a policy-based algorithm with high variance, taking relatively long to converge.
 * The Critic is a value-based algorithm with high bias instead
 In this approach, Actor and Critic work together to reach better convergence and performance.
 
-*Actor model*
+**Actor model**
 Neural network with 3 fully connected layers:
 * Fully connected layer 1: with input = 33 (state spaces) and output = 400
 * Fully connected layer 2: with input = 400 and output = 300
 * Fully connected layer 3: with input = 300 and output = 4, (for each of the 4 actions)
 Tanh is used in the final layer that maps states to actions. Batch normalization is used for mini batch training.
 
-*Critic model*
+**Critic model**
 * Fully connected layer 1: with input = 33 (state spaces) and output = 400
 * Fully connected layer 2: with input = 404 (states and actions) and output = 300
 * Fully connected layer 3: with input = 300 and output = 1, (maps states and actions to Q-values)
