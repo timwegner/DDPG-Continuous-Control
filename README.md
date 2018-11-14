@@ -2,6 +2,8 @@
 
 Solving a continuous control  task of double-jointed arms using DDPG agents.
 
+![](Continuous-Control.gif)
+
 ## Environment details
 The objective of Unity's [Reacher environment](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) is to move the 20 double-jointed arms to reach and maintain a target location for as long as possible. 
 
