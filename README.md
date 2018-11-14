@@ -19,6 +19,7 @@ DDPG is an Actor-Critic model:
 In this approach, Actor and Critic work together to reach better convergence and performance.
 
 **Actor model**
+
 Neural network with 3 fully connected layers:
 * Fully connected layer 1: with input = 33 (state spaces) and output = 400
 * Fully connected layer 2: with input = 400 and output = 300
@@ -26,6 +27,8 @@ Neural network with 3 fully connected layers:
 Tanh is used in the final layer that maps states to actions. Batch normalization is used for mini batch training.
 
 **Critic model**
+
+Neural network with 3 fully connected layers:
 * Fully connected layer 1: with input = 33 (state spaces) and output = 400
 * Fully connected layer 2: with input = 404 (states and actions) and output = 300
 * Fully connected layer 3: with input = 300 and output = 1, (maps states and actions to Q-values)
